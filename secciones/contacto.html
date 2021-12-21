@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" type="text/css">
+    <title>Contacto</title>
+</head>
+<body class="body_rest">
+    <header class="header">
+        <a href="../index.html"><img src="../assets/Logo.png" alt="Logo Diner" class="header__logo"></a>
+        <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="../index.html">Inicio</a></li>
+                    <li class="header__item dropdown"><a href="./categorias.html">Categorías</a>
+                        <ul class="header__sublist">
+                            <li class="header__subitem"><a href="../categorias/mexicana.html">Mexicana</a></li>
+                            <li class="header__subitem"><a href="../categorias/japonesa.html">Japonesa</a></li>
+                            <li class="header__subitem"><a href="../categorias/italiana.html">Italiana</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__item"><a href="./nosotros.html">Nosotros</a></li>
+                    <li class="header__item"><a href="./contacto.html">Contacto</a></li>                </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="categorias__titulo">Contacto</h1>
+                <form action="#" method="get" class="form">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Inserte aquí su nombre" class="form__items">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" placeholder="Inserte aqui su apellido" class="form__items">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Inserte aquí su email" class="form__items">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Inserte aquí sus comentarios" class="form__items"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar" class="form__btn">
+                </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_izq">
+            <a href="../index.html"><img src="../assets/Logo.png" alt="Logo Diner" class="footer__logo"></a>   
+            <p class="footer_links">
+                <a href="../index.html">Inicio</a>
+                <a href="./categorias.html">Categorías</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./contacto.html">Contacto</a>
+            </p>
+        </div>
+        <div class="footer_mid">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>123 Avenida Siempre Viva</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+54 11 1234 45678</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p>hola@diner.com</p>
+            </div>
+        </div>
+        <div class="footer_der">
+            <p class="footer_us">
+                <span>Acerca de Nosotros</span>
+                Somos una empresa dedicada a brindarte la mejor atención para ayudarte al momento de elegir un restaurant donde ir a comer.
+                </p>
+                <div class="footer_icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>
