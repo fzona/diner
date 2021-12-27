@@ -40,6 +40,7 @@ main{
 }
 .navbar-dark .navbar-nav .nav-link.active{
     color: #2d6957;
+    text-decoration: underline;
 }
 .section__principal{
     background-image: url(../assets/Restaurant_Näsinneula.jpg);
@@ -133,7 +134,7 @@ main{
     height: 100%;
     box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
     border: 1px solid #2f725e;
-    font-size: 36px;
+    font-size: 19px;
     padding: 5px;
     color: #2f725e;
     text-align: justify;
@@ -332,6 +333,9 @@ main{
     margin-right: 3px;
     margin-bottom: 5px;
    }
+.main-resto{
+    height: 100rem;
+}
 .resto{
     display:flex;
     align-items: center;
@@ -353,6 +357,11 @@ main{
 .resto__descripcion--titulo{
     color: #276955;
     text-decoration: underline;
+}
+.resto__descripcion h4{
+    text-decoration: underline;
+    font-size: 15px;
+    color: #2f725e;
 }
 .slide-in-fwd-center {
 	-webkit-animation: slide-in-fwd-center 2.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -390,6 +399,9 @@ main{
     }
     .main-index{
         height: 200rem;
+    }
+    .main-resto{
+        height: 120rem;
     }
     .header__item{
         font-size: 20px;
@@ -443,7 +455,7 @@ main{
         grid-area: 3 / 1 / 5 / 9;
     }
     .section_us_descripcion p{
-        font-size: 15px;
+        font-size: 12.5px;
     }
     .section_us_foto--grande{
         grid-area: 5 / 1 / 8 / 9;
