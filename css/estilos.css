@@ -142,31 +142,37 @@ main{
     width: 100%;
     box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
     height: 696px;
+    object-fit: cover;
 }
 .section_us-img1{
     width: 100%;
     box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
     height: 309px;
+    object-fit: cover;
 }
 .section_us-img2{
     width: 100%;
     box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
     height: 309px;
+    object-fit: cover;
 }
 .section_us-img3{
     width: 100%;
     box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
     height: 696px;
+    object-fit: cover;
 }
 .section_us-img4{
     width: 100%;
     box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
     height: 696px;
+    object-fit: cover;
 }
 .section_us-img5{
     width: 100%;
     box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
     height: 309px;
+    object-fit: cover;
 }
 .section_us{
     padding: 5px;
