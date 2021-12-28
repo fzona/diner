@@ -45,6 +45,28 @@ main{
     color: #2d6957;
     text-decoration: underline;
 }
+.jumbotron{
+    padding: 150px 0;
+    background-image: url(../assets/Restaurant_Näsinneula.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.jumbotron h1 {
+    font-size: 70px;
+    margin-bottom: 0;
+  }
+  .jumbotron p {
+    font-family: serif;
+    font-size: 30px;
+    font-style: italic;
+    margin: 0 0 30px;
+  }
 .section__principal{
     background-image: url(../assets/Restaurant_Näsinneula.jpg);
     height: 50rem;
@@ -192,6 +214,12 @@ main{
     margin-left: 3px;
     margin-top: 1rem;
 }
+.resto-btn{
+    background-color: #276955;
+}
+.resto-btn:hover{
+    background-color: #2f725e;
+}  
 .help-block.with-errors {
     color: #ff5050;
     margin-top: 5px;
@@ -317,8 +345,16 @@ main{
 }
 .resto__descripcion{
     text-align: left;
-    color: grey;
-    width: 70rem;
+    color: #2f725e;
+    margin-bottom: 0px;
+}
+.card-img-top{
+    object-fit: cover;
+    height: 20vw;
+    width: 100%;
+}
+.card-text{
+    color: #83888d;
 }
 .resto__descripcion--titulo{
     color: #276955;
