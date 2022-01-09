@@ -1,0 +1,14 @@
+main{
+    height: 100rem;
+}
+.main{
+    &-index{
+        height: 120rem;
+    }
+    &-us{
+        height: 120rem;
+    }
+    &-resto{
+        height: 100rem;
+    }
+}

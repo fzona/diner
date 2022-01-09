@@ -1,0 +1,98 @@
+@import "./variables";
+
+.footer{
+    position: static;
+    bottom: 0px;
+    width: 100%;
+    text-align: left;
+    border-top: solid 5px $color-ppal;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    .footer .footer_izq, .footer .footer_mid,.footer .footer_der{
+        display: inline-block;
+        vertical-align: top;
+    }
+    &_izq{
+        width: 40%;
+    }
+    &_links{
+        color:  $color-ppal;
+        margin: 20px 0 12px;
+        padding: 0;
+        & a{
+            display:inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color:  inherit;
+            margin-right: 1px;
+           }
+       }
+    &__logo{
+           width: 8rem;
+           margin-left: 4.4rem; 
+       }
+    &__list{
+           list-style: none;
+       }
+    &_mid {
+           width: 35%;
+           & i{
+                  width: 35%;
+                  font-size: 25px;
+                  width: 38px;
+                  height: 38px;
+                  border-radius: 50%;
+                  text-align: center;
+                  line-height: 42px;
+                  margin: 10px 15px;
+                  vertical-align: middle;
+                  &.fa-envelope{
+                      font-size: 17px;
+                      line-height: 38px;
+                     }
+              }
+            & p{
+                  display: inline-block;
+                  color: $color-ppal;
+                  vertical-align: middle;
+                  margin:0;
+                 }
+       }
+    &_der{
+           width: 20%;
+          }
+    &_us{
+              line-height: 20px;
+              color:  #92999f;
+              font-size: 13px;
+              font-weight: normal;
+              margin: 0;
+              & span{
+                        display: block;
+                        color:  $color-ppal;
+                        font-size: 14px;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                          }
+             }
+    &_icons{
+                 margin-top: 25px;
+                 & a{
+                     display: inline-block;
+                     width: 35px;
+                     height: 35px;
+                     cursor: pointer;
+                     background-color: $color-secundario;
+                     border-radius: 2px;
+                     
+                     font-size: 20px;
+                     color: #ffffff;
+                     text-align: center;
+                     line-height: 35px;
+                     
+                     margin-right: 3px;
+                     margin-bottom: 5px;
+                    }
+                }
+}

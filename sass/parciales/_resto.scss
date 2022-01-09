@@ -1,0 +1,49 @@
+@import "./variables";
+.resto{
+    display:flex;
+    align-items: center;
+    margin:10px;
+    border: 2px solid $color-ppal;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 #89d2c2;
+    margin: 0 25rem 1rem 25rem;
+
+    &__foto{
+        width: 15rem;
+        height: 10rem;
+    }
+
+    &__descripcion{
+        text-align: left;
+        color: $color-secundario;
+        margin-bottom: 0px;
+        &--titulo{
+            color: $color-ppal;
+            text-decoration: underline;
+        }
+        & h4{
+            text-decoration: underline;
+            font-size: 15px;
+            color: $color-secundario;
+        }
+    }
+
+    &-btn{
+        background-color: $color-ppal;
+        &:hover{
+            background-color: $color-secundario;
+        }
+    }
+}
+.card {
+    margin-left: 10px;
+    margin-right: 10px;
+    &-img-top{
+        object-fit: cover;
+        height: 20vw;
+        width: 100%;
+    }
+    &-text{
+        color: #83888d;
+    }
+}
