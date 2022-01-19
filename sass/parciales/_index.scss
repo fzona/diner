@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./responsive-mixins";
 
 .jumbotron{
     padding: 150px 0;
@@ -42,13 +43,25 @@
         flex-direction: row;
         justify-content: space-around;
         margin: 1rem;
+        @include movil{
+            flex-direction: column;
+        }
     }
     &_cat{
         margin-bottom: 2rem;
         &--flex{
             display: flex;
             justify-content: space-around;
+            @include movil{
+                flex-direction: column;
+                align-items: center;
+                height: 70rem;
+            }
         }
+        @include tablet{
+            margin-top: 1rem;
+        }
+        
     }
     &_us{
         padding: 5px;
@@ -63,34 +76,23 @@
             object-fit: cover;
         }
         &-img1{
-            width: 100%;
-            box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+            @extend .section_us-img;
             height: 309px;
-            object-fit: cover;
+
         }
         &-img2{
-            width: 100%;
-            box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+            @extend .section_us-img;
             height: 309px;
-            object-fit: cover;
         }
         &-img3{
-            width: 100%;
-            box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
-            height: 696px;
-            object-fit: cover;
+            @extend .section_us-img;
         }
         &-img4{
-            width: 100%;
-            box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
-            height: 696px;
-            object-fit: cover;
+            @extend .section_us-img;
         }
         &-img5{
-            width: 100%;
-            box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+            @extend .section_us-img;
             height: 309px;
-            object-fit: cover;
         }
     }
 }
@@ -99,6 +101,9 @@
     border-radius: 8%;
     box-shadow: 0 20px 50px rgba(0,0,0,0.8);
     margin-bottom: 3rem;
+    @include movil{
+        margin: 3px;
+    }
 }
 .sectiontwo{
     &__titulo{
@@ -115,5 +120,13 @@
         width: 50rem;
         height: 25rem;
         margin: 30px;
+        @include tablet{
+            width: 50%;
+            object-fit: cover;
+        }
+        @include movil{
+            width: 90%;
+            margin: 20px;
+        }
     }
 }

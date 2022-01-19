@@ -1,13 +1,20 @@
 @import "./variables";
 
+$estilos:(
+    color: #276955,
+    padding: 2 rem,
+    tFuente: 2.5rem,
+    tDecoration: underline,
+    centro: center,
+);
+
 .categorias{
     &__titulo{
-        color: $color-ppal;
-        text-decoration: underline;
-        padding: 2rem;
-        text-align: center;
-        font-size: 2.5rem;
-        
+        color: map-get($estilos,color);
+        text-decoration: map-get($estilos,tDecoration);
+        padding: map-get($estilos,padding);
+        text-align: map-get($estilos,centro);
+        font-size: map-get($estilos,tFuente);
     }
     &__img{
         width: 15rem;
@@ -21,7 +28,7 @@
     }
     &__subtitle{
         color: $color-ppal;
-        text-align: center;
+        text-align: map-get($estilos,centro);
         font-size: 1.3rem;
     }
 }

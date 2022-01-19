@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./responsive-mixins";
 
 .footer{
     position: static;
@@ -15,6 +16,11 @@
     }
     &_izq{
         width: 40%;
+        @include movil{
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+            } 
     }
     &_links{
         color:  $color-ppal;
@@ -30,7 +36,10 @@
        }
     &__logo{
            width: 8rem;
-           margin-left: 4.4rem; 
+           margin-left: 4.4rem;
+           @include movil{
+            margin-left: 1rem;
+            } 
        }
     &__list{
            list-style: none;
@@ -51,16 +60,40 @@
                       font-size: 17px;
                       line-height: 38px;
                      }
+                @include tablet{
+                        margin: 10px 5px;
+                    }
+                 @include movil{
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
               }
             & p{
                   display: inline-block;
                   color: $color-ppal;
                   vertical-align: middle;
                   margin:0;
+                  @include tablet{
+                      font-size: 15px;
+                  }
+                  @include movil-s{
+                    font-size: 13px;
+                }
                  }
-       }
+            @include movil{
+                    width: 100%;
+                    margin-bottom: 40px;
+                    text-align: center;
+                    } 
+                }
     &_der{
            width: 20%;
+           @include movil{
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+            } 
           }
     &_us{
               line-height: 20px;
@@ -93,6 +126,15 @@
                      
                      margin-right: 3px;
                      margin-bottom: 5px;
+                     @include tablet{
+                         width: 28px;
+                     }
                     }
-                }
+                }         
+    @include tablet{
+        padding: 20px 30px;
+    }
+    @include movil{
+        flex-direction: column;
+    }
 }

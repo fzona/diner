@@ -1,14 +1,54 @@
+@import "./responsive-mixins";
+
+
 main{
     height: 100rem;
 }
 .main{
     &-index{
         height: 120rem;
+        @include movil{
+            height: 200rem;
+        }
     }
     &-us{
         height: 120rem;
+        @include movil{
+            height: 250rem;
+        }
+        @include tablet{
+            height: 160rem;
+        }
+        @include laptop{
+            height: 100rem;
+        }
     }
     &-resto{
         height: 100rem;
+        @include movil{
+            height: 60rem;
+        }
+        @include tablet{
+            height: 40rem;
+        }
+        @include laptop{
+            height: 40rem;
+        }
+    }
+    &-cat{
+        @include tablet{
+            height: 30rem;
+        }
+        @include movil{
+            height: 80rem;
+        }
+    }
+    &-form{
+        @include tablet{
+            height: 40rem;
+        }
+        @include movil{
+            height: 50rem;
+        }
     }
 }
