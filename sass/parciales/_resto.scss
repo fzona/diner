@@ -1,56 +1,64 @@
 @import "./variables";
 @import "./responsive-mixins";
 
-.resto{
-    display:flex;
+.resto {
+    display: flex;
     align-items: center;
-    margin:10px;
+    margin: 10px;
     border: 2px solid $color-ppal;
     padding: 1rem;
     box-shadow: 0 4px 8px 0 #89d2c2;
     margin: 0 25rem 1rem 25rem;
 
-    &__foto{
+    &__foto {
         width: 15rem;
         height: 10rem;
     }
 
-    &__descripcion{
+    &__descripcion {
         text-align: left;
         color: $color-secundario;
         margin-bottom: 0px;
-        &--titulo{
+
+        &--titulo {
             color: $color-ppal;
             text-decoration: underline;
         }
-        & h4{
+
+        & h4 {
             text-decoration: underline;
             font-size: 15px;
         }
-        @include movil{
+
+        @include movil {
             font-size: 70%;
         }
     }
 
-    &-btn{
+    &-btn {
         background-color: $color-ppal;
-        &:hover{
+
+        &:hover {
             background-color: $color-secundario;
         }
     }
-    @include movil{
+
+    @include movil {
         margin: 10px;
     }
 }
+
 .card {
     margin-left: 10px;
     margin-right: 10px;
-    &-img-top{
+
+    &-img-top {
         object-fit: cover;
         height: 20vw;
         width: 100%;
     }
-    &-text{
+
+    &-text {
         color: #83888d;
     }
 }

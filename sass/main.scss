@@ -9,26 +9,28 @@
 @import "./parciales/resto";
 @import "./parciales/responsive-mixins";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-    &-rest{
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    &-rest {
         min-height: 100%;
         min-width: 100%;
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
             "header"
             "main"
             "footer";
-        grid-template-rows:12.5rem 100rem 6.25rem;
+        grid-template-rows: 12.5rem 100rem 6.25rem;
     }
 }
-.row{
+
+.row {
     margin-right: 0px;
     margin-left: 0px;
 }

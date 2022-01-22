@@ -1,7 +1,7 @@
 @import "./variables";
 @import "./responsive-mixins";
 
-.jumbotron{
+.jumbotron {
     padding: 150px 0;
     background-image: url(../assets/Restaurant_Näsinneula.jpg);
     background-position: center center;
@@ -12,19 +12,22 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+
     & h1 {
         font-size: 70px;
         margin-bottom: 0;
-      }
+    }
+
     & p {
         font-family: serif;
         font-size: 30px;
         font-style: italic;
         margin: 0 0 30px;
-      }
+    }
 }
-.section{
-    &__principal{
+
+.section {
+    &__principal {
         background-image: url(../assets/Restaurant_Näsinneula.jpg);
         height: 50rem;
         width: 100%;
@@ -32,99 +35,120 @@
         background-size: cover;
         margin-bottom: 0.5rem;
     }
-    &__titulo{
-        text-align:center;
+
+    &__titulo {
+        text-align: center;
         color: white;
         font-size: 2.5rem;
         font-weight: bold;
     }
-    &_recommend{
+
+    &_recommend {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         margin: 1rem;
-        @include movil{
+
+        @include movil {
             flex-direction: column;
         }
     }
-    &_cat{
+
+    &_cat {
         margin-bottom: 2rem;
-        &--flex{
+
+        &--flex {
             display: flex;
             justify-content: space-around;
-            @include movil{
+
+            @include movil {
                 flex-direction: column;
                 align-items: center;
                 height: 70rem;
             }
         }
-        @include tablet{
+
+        @include tablet {
             margin-top: 1rem;
         }
-        
+
     }
-    &_us{
+
+    &_us {
         padding: 5px;
         color: $color-secundario;
         text-align: center;
         margin: 0 1rem 1rem 1rem;
         font-weight: 700;
-        &-img{
+
+        &-img {
             width: 100%;
-            box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
             height: 696px;
             object-fit: cover;
         }
-        &-img1{
+
+        &-img1 {
             @extend .section_us-img;
             height: 309px;
 
         }
-        &-img2{
+
+        &-img2 {
             @extend .section_us-img;
             height: 309px;
         }
-        &-img3{
+
+        &-img3 {
             @extend .section_us-img;
         }
-        &-img4{
+
+        &-img4 {
             @extend .section_us-img;
         }
-        &-img5{
+
+        &-img5 {
             @extend .section_us-img;
             height: 309px;
         }
     }
 }
-.cuadro{
+
+.cuadro {
     background-color: #99d6c9;
     border-radius: 8%;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     margin-bottom: 3rem;
-    @include movil{
+
+    @include movil {
         margin: 3px;
     }
 }
-.sectiontwo{
-    &__titulo{
+
+.sectiontwo {
+    &__titulo {
         color: $color-ppal;
         text-decoration: underline;
         padding: 1rem;
         margin-left: 1rem;
     }
-    &__parrafo{
+
+    &__parrafo {
         color: black;
         margin-left: 1rem;
     }
-    &__foto{
+
+    &__foto {
         width: 50rem;
         height: 25rem;
         margin: 30px;
-        @include tablet{
+
+        @include tablet {
             width: 50%;
             object-fit: cover;
         }
-        @include movil{
+
+        @include movil {
             width: 90%;
             margin: 20px;
         }

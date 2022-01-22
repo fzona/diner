@@ -1,34 +1,36 @@
 @import "./variables";
 
-$estilos:(
-    color: #276955,
+$estilos:(color: #276955,
     padding: 2 rem,
     tFuente: 2.5rem,
     tDecoration: underline,
     centro: center,
 );
 
-.categorias{
-    &__titulo{
-        color: map-get($estilos,color);
-        text-decoration: map-get($estilos,tDecoration);
-        padding: map-get($estilos,padding);
-        text-align: map-get($estilos,centro);
-        font-size: map-get($estilos,tFuente);
+.categorias {
+    &__titulo {
+        color: map-get($estilos, color);
+        text-decoration: map-get($estilos, tDecoration);
+        padding: map-get($estilos, padding);
+        text-align: map-get($estilos, centro);
+        font-size: map-get($estilos, tFuente);
     }
-    &__img{
+
+    &__img {
         width: 15rem;
         height: 15rem;
         border-radius: 50%;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.8);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
         transition: 0.3s;
-        &:hover{
-            box-shadow: 10px 10px 50px rgba(0,0,0,0.8);
+
+        &:hover {
+            box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.8);
         }
     }
-    &__subtitle{
+
+    &__subtitle {
         color: $color-ppal;
-        text-align: map-get($estilos,centro);
+        text-align: map-get($estilos, centro);
         font-size: 1.3rem;
     }
 }
