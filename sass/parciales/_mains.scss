@@ -44,6 +44,14 @@ main {
         @include laptop {
             height: 70rem;
         }
+
+        @include grande {
+            height: 80rem;
+        }
+
+        @include grandexl {
+            height: 95rem;
+        }
     }
 
     &-cat {

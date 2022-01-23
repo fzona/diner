@@ -456,6 +456,18 @@ main {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .main-resto {
+    height: 80rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .main-resto {
+    height: 95rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .main-cat {
     height: 70rem;
