@@ -34,25 +34,29 @@ main {
         height: 100rem;
 
         @include movil {
-            height: 60rem;
+            height: 107rem;
         }
 
         @include tablet {
-            height: 40rem;
+            height: 50rem;
         }
 
         @include laptop {
-            height: 40rem;
+            height: 70rem;
         }
     }
 
     &-cat {
         @include tablet {
-            height: 30rem;
+            height: 70rem;
         }
 
         @include movil {
-            height: 80rem;
+            height: 220rem;
+        }
+
+        @include laptop {
+            height: 70rem;
         }
     }
 

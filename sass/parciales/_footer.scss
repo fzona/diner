@@ -39,6 +39,10 @@
             text-decoration: none;
             color: inherit;
             margin-right: 1px;
+
+            @include movil-s {
+                font-size: 13px;
+            }
         }
     }
 
