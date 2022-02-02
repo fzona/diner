@@ -16,6 +16,7 @@
     & h1 {
         font-size: 70px;
         margin-bottom: 0;
+        text-shadow: 1px 1px 1px black;
     }
 
     & p {
@@ -23,6 +24,7 @@
         font-size: 30px;
         font-style: italic;
         margin: 0 0 30px;
+        text-shadow: 1px 1px 1px black;
     }
 }
 
@@ -154,5 +156,12 @@
             width: 90%;
             margin: 20px;
         }
+    }
+}
+
+.aos-animate {
+    &:hover {
+        text-decoration: underline;
+        color: $color-ppal;
     }
 }

@@ -12,6 +12,10 @@ main {
         @include movil {
             height: 200rem;
         }
+
+        @include movil-s {
+            height: 207rem;
+        }
     }
 
     &-us {

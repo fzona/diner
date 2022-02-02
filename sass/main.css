@@ -44,6 +44,7 @@
 .jumbotron h1 {
   font-size: 70px;
   margin-bottom: 0;
+  text-shadow: 1px 1px 1px black;
 }
 
 .jumbotron p {
@@ -51,6 +52,7 @@
   font-size: 30px;
   font-style: italic;
   margin: 0 0 30px;
+  text-shadow: 1px 1px 1px black;
 }
 
 .section__principal {
@@ -198,6 +200,11 @@
     width: 90%;
     margin: 20px;
   }
+}
+
+.aos-animate:hover {
+  text-decoration: underline;
+  color: #276955;
 }
 
 .footer {
@@ -409,6 +416,12 @@ main {
 @media screen and (max-width: 425px) {
   .main-index {
     height: 200rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main-index {
+    height: 207rem;
   }
 }
 
